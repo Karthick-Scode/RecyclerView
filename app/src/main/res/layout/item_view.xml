@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="20dp"
+            app:cardPreventCornerOverlap="false">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!-- android:scaleType="centerCrop"-->
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Name"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Price"
+            android:textStyle="bold"
+            android:layout_marginTop="45dp"
+            android:textSize="22sp"
+            android:layout_marginLeft="160dp"/>
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:layout_marginTop="80dp"
+            android:textSize="14sp"
+            android:layout_marginLeft="160dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
